@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85826028-87e4-4759-86a5-3fcbc1c5d1f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home/Card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/ToolboxHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/ToolboxHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes.mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.mock.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602954253609</updated>
-      <workItem from="1602954255237" duration="3987000" />
+      <workItem from="1602954255237" duration="6802000" />
     </task>
     <task id="LOCAL-00001" summary="setup bae things">
       <created>1602957045757</created>
@@ -72,7 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602957045757</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setup home">
+      <created>1602958273581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602958273581</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add notes">
+      <created>1602960752334</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602960752334</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,52 +92,58 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup bae things" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup bae things" />
+    <MESSAGE value="setup home" />
+    <MESSAGE value="add notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add notes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="436" y="199" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602954319520">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="436" y="199" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602954319520" />
+    <state x="724" y="334" width="504" height="411" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602958904166">
+      <screen x="37" y="0" width="1883" height="1080" />
+    </state>
+    <state x="724" y="334" width="504" height="411" key="#com.intellij.fileTypes.FileTypeChooser/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602958904166" />
     <state x="711" y="291" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602954967169">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="711" y="291" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602954967169" />
-    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2" timestamp="1602957045658">
+    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2" timestamp="1602960752287">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602957045658" />
+    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960752287" />
     <state x="761" y="299" width="430" height="481" key="FileChooserDialogImpl" timestamp="1602954388868">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="761" y="299" width="430" height="481" key="FileChooserDialogImpl/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602954388868" />
-    <state width="1841" height="281" key="GridCell.Tab.0.bottom" timestamp="1602957041370">
+    <state width="1841" height="281" key="GridCell.Tab.0.bottom" timestamp="1602960746161">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="281" key="GridCell.Tab.0.bottom/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602957041370" />
-    <state width="1841" height="281" key="GridCell.Tab.0.center" timestamp="1602957041370">
+    <state width="1841" height="281" key="GridCell.Tab.0.bottom/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960746161" />
+    <state width="1841" height="281" key="GridCell.Tab.0.center" timestamp="1602960746160">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="281" key="GridCell.Tab.0.center/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602957041370" />
-    <state width="1841" height="281" key="GridCell.Tab.0.left" timestamp="1602957041370">
+    <state width="1841" height="281" key="GridCell.Tab.0.center/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960746160" />
+    <state width="1841" height="281" key="GridCell.Tab.0.left" timestamp="1602960746160">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="281" key="GridCell.Tab.0.left/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602957041370" />
-    <state width="1841" height="281" key="GridCell.Tab.0.right" timestamp="1602957041370">
+    <state width="1841" height="281" key="GridCell.Tab.0.left/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960746160" />
+    <state width="1841" height="281" key="GridCell.Tab.0.right" timestamp="1602960746160">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="281" key="GridCell.Tab.0.right/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602957041370" />
+    <state width="1841" height="281" key="GridCell.Tab.0.right/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960746160" />
     <state x="482" y="176" key="SettingsEditor" timestamp="1602954926324">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="482" y="176" key="SettingsEditor/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602954926324" />
-    <state width="498" height="445" key="SwitcherDM" timestamp="1602955543290">
+    <state width="498" height="445" key="SwitcherDM" timestamp="1602959391301">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="498" height="445" key="SwitcherDM/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602955543290" />
-    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1602955298285">
+    <state width="498" height="445" key="SwitcherDM/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602959391301" />
+    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1602960558970">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602955298285" />
+    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960558970" />
   </component>
 </project>

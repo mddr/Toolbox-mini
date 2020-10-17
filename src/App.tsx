@@ -10,12 +10,12 @@ import { AppTheme } from './app.models';
 import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState<AppTheme>('dark');
 
   return (
     <div className={`app ${theme === 'light' ? 'light-theme' : ''}`}>
       <BrowserRouter>
-        <ToolboxHeader theme={theme as AppTheme} setTheme={setTheme} />
+        <ToolboxHeader theme={theme} setTheme={setTheme} />
 
         <Switch>
           <Route exact path="/">

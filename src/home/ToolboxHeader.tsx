@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { IconBulb, IconBulbOff } from 'tabler-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { AppTheme } from '../app.models';
 
@@ -10,15 +10,19 @@ interface ToolboxHeaderProps {
   setTheme: (newTheme: AppTheme) => void;
 }
 
-export function ToolboxHeader(props: ToolboxHeaderProps) {
-  const { theme, setTheme } = props;
+export function ToolboxHeader({ theme, setTheme }: ToolboxHeaderProps) {
+  const { pathname } = useLocation();
+
   return (
     <Header>
       <Icon onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
         {theme === 'dark' ? SetLightThemeIcon : SetDarkThemeIcon}
       </Icon>
 
-      <StyledLink to="/">toolbox</StyledLink>
+      <div>
+        <PathName>{pathname.replace('/', '')}</PathName>
+        <StyledLink to="/">toolbox</StyledLink>
+      </div>
     </Header>
   );
 }
@@ -49,4 +53,9 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 
   cursor: pointer;
+`;
+
+const PathName = styled.span`
+  padding-right: 1rem;
+  font-size: 2rem;
 `;

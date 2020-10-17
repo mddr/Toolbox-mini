@@ -1,5 +1,5 @@
 div.app {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
 
   --gray: #f2f2f2;
@@ -11,8 +11,8 @@ div.app {
 
   --shadow-base: 16px 16px 32px 0 #202b30,
   -16px -16px 32px 0 rgba(44, 58, 64, 0.7);
-  --shadow-inset: 11px 11px 22px 0 rgba(32, 43, 48, 0.7),
-  -11px -11px 22px 0 rgba(44, 58, 64, 0.7);
+  --shadow-inset: inset 11px 11px 22px 0 rgba(32, 43, 48, 0.7),
+  inset -11px -11px 22px 0 rgba(44, 58, 64, 0.7);
 }
 
 div.app.light-theme {
@@ -22,8 +22,8 @@ div.app.light-theme {
 
   --shadow-base: 16px 16px 32px 0 #cecece,
   -16px -16px 32px 0 rgba(255, 255, 255, 0.7);
-  --shadow-inset: 11px 11px 22px 0 #cecece,
-  -11px -11px 22px 0 rgba(255, 255, 255, 0.7);
+  --shadow-inset: inset 11px 11px 22px 0 #cecece,
+  inset -11px -11px 22px 0 rgba(255, 255, 255, 0.7);
 }
 
 div.app {
