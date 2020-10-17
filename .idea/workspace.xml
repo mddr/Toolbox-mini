@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85826028-87e4-4759-86a5-3fcbc1c5d1f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/ToolboxHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/ToolboxHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/notes.mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.mock.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602954253609</updated>
-      <workItem from="1602954255237" duration="6802000" />
+      <workItem from="1602954255237" duration="7040000" />
     </task>
     <task id="LOCAL-00001" summary="setup bae things">
       <created>1602957045757</created>
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602960752334</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add notes">
+      <created>1602961075316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602961075316</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,10 +115,10 @@
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="711" y="291" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602954967169" />
-    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2" timestamp="1602960752287">
+    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2" timestamp="1602961075269">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960752287" />
+    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602961075269" />
     <state x="761" y="299" width="430" height="481" key="FileChooserDialogImpl" timestamp="1602954388868">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
