@@ -12,7 +12,10 @@
     "@types/react-dom": "^16.9.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "styled-components": "^5.2.0",
+    "tabler-icons": "^1.34.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -22,7 +25,16 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "quotes": [
+        "error",
+        "single"
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -35,5 +47,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.6",
+    "@types/styled-components": "^5.1.4",
+    "eslint-plugin-react": "^7.21.4",
+    "prettier": "^2.1.2"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+
+import { Home } from './home/Home';
+import { Board } from './board/Board';
+import { Notes } from './notes/Notes';
+import { ToolboxHeader } from './home/ToolboxHeader';
+import { AppTheme } from './app.models';
+
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${theme === 'light' ? 'light-theme' : ''}`}>
+      <ToolboxHeader theme={theme as AppTheme} setTheme={setTheme} />
+
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route path="/boards">
+            <Board />
+          </Route>
+
+          <Route path="/notes">
+            <Notes />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
