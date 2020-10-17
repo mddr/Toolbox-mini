@@ -14,15 +14,15 @@ function App() {
 
   return (
     <div className={`app ${theme === 'light' ? 'light-theme' : ''}`}>
-      <ToolboxHeader theme={theme as AppTheme} setTheme={setTheme} />
-
       <BrowserRouter>
+        <ToolboxHeader theme={theme as AppTheme} setTheme={setTheme} />
+
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
 
-          <Route path="/boards">
+          <Route path="/board">
             <Board />
           </Route>
 

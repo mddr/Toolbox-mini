@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { IconBulb, IconBulbOff } from 'tabler-icons';
+import { Link } from 'react-router-dom';
 
 import { AppTheme } from '../app.models';
-import { BrowserRouter, Link } from 'react-router-dom';
 
 interface ToolboxHeaderProps {
   theme: AppTheme;
@@ -18,9 +18,7 @@ export function ToolboxHeader(props: ToolboxHeaderProps) {
         {theme === 'dark' ? SetLightThemeIcon : SetDarkThemeIcon}
       </Icon>
 
-      <BrowserRouter>
-        <StyledLink to="/">toolbox</StyledLink>
-      </BrowserRouter>
+      <StyledLink to="/">toolbox</StyledLink>
     </Header>
   );
 }
