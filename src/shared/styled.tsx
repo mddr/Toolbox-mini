@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IconTrash } from 'tabler-icons';
 
 export const ViewWrapper = styled.div`
   max-width: 1200px;
@@ -24,4 +25,14 @@ export const Button = styled.button`
   color: var(--accent);
   border: none;
   padding: 0 2rem;
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+`;
+
+export const BaseButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+`;
+export const DeleteIcon = styled(IconTrash)`
+  color: var(--warn);
 `;

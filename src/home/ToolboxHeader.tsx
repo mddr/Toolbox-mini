@@ -35,8 +35,11 @@ const SetLightThemeIcon = (
   <IconBulb size={iconSize} strokeWidth={1.5} stroke="#f2f2f2" fill="none" />
 );
 
-const Icon = styled.div`
+const Icon = styled.button`
   cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--fg);
 `;
 
 const Header = styled.header`

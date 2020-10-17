@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 
-import { NoteType } from '../app.models';
 import { notesMock } from './notes.mock';
 import { Note } from './Note';
-import styled from 'styled-components';
 import { ViewWrapper } from '../shared/styled';
 import { NewNote } from './NewNote';
+import { NoteType } from './notes.model';
 
 export function Notes() {
   const [notes, setNotes] = useState<NoteType[]>(notesMock);

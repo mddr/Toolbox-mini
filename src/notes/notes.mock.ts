@@ -1,4 +1,4 @@
-import { NoteType } from '../app.models';
+import { NoteType } from './notes.model';
 
 export const notesMock: NoteType[] = [
   { id: 'id-1', content: 'Lorem ipsum dolor sit amet' },
