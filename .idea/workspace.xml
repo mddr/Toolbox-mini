@@ -11,23 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85826028-87e4-4759-86a5-3fcbc1c5d1f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/integration/app.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/integration/board.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/integration/notes.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cypress/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/toolbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/toolbox.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/app.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/app.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/board.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/board.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/plugins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/plugins/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/screenshots/All Specs/Board -- should support multiple containers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/support/commands.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board/Board.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Board.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Task.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board/Tasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Tasks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/ToolboxHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/ToolboxHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/NewNote.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/NewNote.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/Note.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/Note.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/Notes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/Notes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/notes.mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.mock.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +78,7 @@
       <updated>1602954253609</updated>
       <workItem from="1602954255237" duration="11364000" />
       <workItem from="1603090383318" duration="343000" />
-      <workItem from="1603474909782" duration="7757000" />
+      <workItem from="1603474909782" duration="12708000" />
     </task>
     <task id="LOCAL-00001" summary="setup bae things">
       <created>1602957045757</created>
@@ -124,16 +115,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602961306710</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add cypress">
+      <created>1603483089555</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603483089555</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/cypress/support/index.d.ts" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -152,9 +145,14 @@
     <MESSAGE value="setup home" />
     <MESSAGE value="add notes" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="add cypress" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cypress" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="837" y="423" width="278" height="233" key="#ESLint" timestamp="1603483697838">
+      <screen x="37" y="0" width="1883" height="1080" />
+    </state>
+    <state x="837" y="423" width="278" height="233" key="#ESLint/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603483697838" />
     <state x="436" y="199" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602954319520">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
@@ -167,30 +165,30 @@
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="711" y="291" width="530" height="497" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602954967169" />
-    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2" timestamp="1602961306670">
+    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2" timestamp="1603483089394">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602961306670" />
+    <state x="577" y="44" width="798" height="991" key="CommitChangelistDialog2/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603483089394" />
     <state x="761" y="299" width="430" height="481" key="FileChooserDialogImpl" timestamp="1603478280487">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="761" y="299" width="430" height="481" key="FileChooserDialogImpl/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603478280487" />
-    <state width="1841" height="264" key="GridCell.Tab.0.bottom" timestamp="1603482762300">
+    <state width="1841" height="264" key="GridCell.Tab.0.bottom" timestamp="1603487327166">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="264" key="GridCell.Tab.0.bottom/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603482762300" />
-    <state width="1841" height="264" key="GridCell.Tab.0.center" timestamp="1603482762300">
+    <state width="1841" height="264" key="GridCell.Tab.0.bottom/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603487327166" />
+    <state width="1841" height="264" key="GridCell.Tab.0.center" timestamp="1603487327166">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="264" key="GridCell.Tab.0.center/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603482762300" />
-    <state width="1841" height="264" key="GridCell.Tab.0.left" timestamp="1603482762300">
+    <state width="1841" height="264" key="GridCell.Tab.0.center/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603487327166" />
+    <state width="1841" height="264" key="GridCell.Tab.0.left" timestamp="1603487327166">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="264" key="GridCell.Tab.0.left/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603482762300" />
-    <state width="1841" height="264" key="GridCell.Tab.0.right" timestamp="1603482762300">
+    <state width="1841" height="264" key="GridCell.Tab.0.left/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603487327166" />
+    <state width="1841" height="264" key="GridCell.Tab.0.right" timestamp="1603487327166">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="1841" height="264" key="GridCell.Tab.0.right/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603482762300" />
+    <state width="1841" height="264" key="GridCell.Tab.0.right/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603487327166" />
     <state x="788" y="163" width="376" height="753" key="RollbackChangesDialog" timestamp="1602967013495">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
@@ -199,10 +197,10 @@
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="482" y="176" key="SettingsEditor/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602954926324" />
-    <state width="498" height="445" key="SwitcherDM" timestamp="1602962070634">
+    <state width="498" height="445" key="SwitcherDM" timestamp="1603485722164">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state width="498" height="445" key="SwitcherDM/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602962070634" />
+    <state width="498" height="445" key="SwitcherDM/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603485722164" />
     <state x="785" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602964621327">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
@@ -211,9 +209,9 @@
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
     <state x="624" y="262" width="700" height="530" key="recent.locations.popup/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602962074105" />
-    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1602960558970">
+    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603486645412">
       <screen x="37" y="0" width="1883" height="1080" />
     </state>
-    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1602960558970" />
+    <state x="641" y="239" width="672" height="678" key="search.everywhere.popup/37.0.1883.1080/1920.0.1920.1080@37.0.1883.1080" timestamp="1603486645412" />
   </component>
 </project>

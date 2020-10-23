@@ -65,6 +65,10 @@ describe('Board', () => {
       .click();
     assertContainerTasksLength('to-do', 2);
   });
+
+  it('should match image snapshot', () => {
+    getByTestId('app-container').matchImageSnapshot();
+  });
 });
 
 type TaskContainers = 'to-do' | 'in-progress' | 'done';

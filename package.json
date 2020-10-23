@@ -10,6 +10,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "axios": "^0.21.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
@@ -49,13 +50,16 @@
     ]
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/react-router-dom": "^5.1.6",
     "@types/styled-components": "^5.1.4",
     "cypress": "^5.4.0",
+    "cypress-image-snapshot": "^3.1.1",
     "eslint-plugin-react": "^7.21.4",
     "prettier": "^2.1.2"
   },
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "proxy": "http://localhost:3001"
 }

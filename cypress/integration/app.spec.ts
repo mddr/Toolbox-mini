@@ -2,6 +2,10 @@ import { getByTestId } from '../support/commands';
 
 describe('App', () => {
   beforeEach(() => {
+    cy.server();
+    cy.fixture('example.json').as('exampleJSON');
+    cy.route('GET', '/test', '@exampleJSON').as('dummy');
+
     cy.visit('');
   });
 
@@ -33,5 +37,13 @@ describe('App', () => {
 
     getByTestId('home-link').click();
     cy.url().should('match', /\/$/);
+  });
+
+  it('should wait', () => {
+    cy.wait('@dummy').its('response.body').should('deep.equal', {
+      name: 'Using fixtures to represent data',
+      email: 'hello@cypress.io',
+      body: 'Fixtures are a great way to mock data for responses to routes',
+    });
   });
 });

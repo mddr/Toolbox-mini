@@ -28,6 +28,7 @@ declare global {
   namespace Cypress {
     interface Chainable<Subject> {
       assertHeaderVisible(pathName?: string): void;
+      matchImageSnapshot(): void;
     }
   }
 }
@@ -47,3 +48,7 @@ const assertHeaderVisible = (pathName: string = '') => {
   getByTestId('path-name').should('be.visible').and('contain', pathName);
 };
 Cypress.Commands.add('assertHeaderVisible', assertHeaderVisible);
+
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+
+addMatchImageSnapshotCommand();

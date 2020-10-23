@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import axios from 'axios';
 
 import { Home } from './home/Home';
 import { Board } from './board/Board';
@@ -12,6 +13,11 @@ import './App.css';
 function App() {
   const [theme, setTheme] = useState<AppTheme>('dark');
 
+  useMemo(() => {
+    axios.get('/test').then((res) => {
+      console.log({ data: res.data });
+    });
+  }, []);
   return (
     <div
       data-test-id={'app-container'}
