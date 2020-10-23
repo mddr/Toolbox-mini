@@ -17,13 +17,18 @@ export const NewNote: FunctionComponent<NewNoteProp> = ({ addNote }) => {
   return (
     <Wrapper>
       <Input
+        data-test-id={'new-note-input'}
         type="text"
         placeholder="Note content..."
         onChange={(e) => setContent(e.target.value)}
         value={content}
       />
 
-      <ButtonWithMargin disabled={!content} onClick={() => onButtonClick()}>
+      <ButtonWithMargin
+        data-test-id={'add-note'}
+        disabled={!content}
+        onClick={() => onButtonClick()}
+      >
         <IconPlus size={24} />
         add new note
       </ButtonWithMargin>

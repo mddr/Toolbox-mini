@@ -13,7 +13,10 @@ function App() {
   const [theme, setTheme] = useState<AppTheme>('dark');
 
   return (
-    <div className={`app ${theme === 'light' ? 'light-theme' : ''}`}>
+    <div
+      data-test-id={'app-container'}
+      className={`app ${theme === 'light' ? 'light-theme' : ''}`}
+    >
       <BrowserRouter>
         <ToolboxHeader theme={theme} setTheme={setTheme} />
 

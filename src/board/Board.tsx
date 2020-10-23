@@ -41,7 +41,8 @@ export function Board() {
 
   const addTask = (to: TaskType[], toHandler: React.Dispatch<TaskType[]>) => {
     return (content: string) => {
-      const id = `id-${to.length + 100}`;
+      const guid = Math.round(Math.random() * 1000);
+      const id = `id-${guid}`;
       toHandler([...to, { id, content }]);
     };
   };

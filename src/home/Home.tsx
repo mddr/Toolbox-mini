@@ -13,7 +13,7 @@ export function Home() {
     <HomeGrid>
       <NotesWrapper>
         <Card>
-          <StyledLink to="/notes">
+          <StyledLink data-test-id={'route-link-notes'} to="/notes">
             <IconNotes
               size={iconSize}
               stroke={iconColor}
@@ -26,7 +26,7 @@ export function Home() {
 
       <BoardWrapper>
         <Card>
-          <StyledLink to="/board">
+          <StyledLink data-test-id={'route-link-board'} to="/board">
             <IconListCheck
               size={iconSize}
               stroke={iconColor}

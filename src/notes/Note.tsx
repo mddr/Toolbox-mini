@@ -11,9 +11,14 @@ interface NoteProps {
 
 export const Note: FunctionComponent<NoteProps> = ({ note, deleteNote }) => {
   return (
-    <Wrapper>
-      <ContentWrapper>{note.content}</ContentWrapper>
-      <BaseButton onClick={() => deleteNote(note.id)}>
+    <Wrapper data-test-id={'note'}>
+      <ContentWrapper data-test-id={'note-content'}>
+        {note.content}
+      </ContentWrapper>
+      <BaseButton
+        data-test-id={'note-delete'}
+        onClick={() => deleteNote(note.id)}
+      >
         <DeleteIcon />
       </BaseButton>
     </Wrapper>

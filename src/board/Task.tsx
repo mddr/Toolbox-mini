@@ -1,8 +1,9 @@
 import React, { FunctionComponent } from 'react';
-import { TaskType } from './board.model';
-import styled from 'styled-components';
 import { IconChevronLeft, IconChevronRight } from 'tabler-icons';
+import styled from 'styled-components';
+
 import { BaseButton, DeleteIcon } from '../shared/styled';
+import { TaskType } from './board.model';
 
 interface TaskProps {
   task: TaskType;
@@ -14,11 +15,12 @@ interface TaskProps {
 }
 export const Task: FunctionComponent<TaskProps> = (props) => {
   return (
-    <Wrapper>
+    <Wrapper data-test-id={`task-${props.task.id.toLowerCase()}`}>
       <Id>{props.task.id}</Id>
 
       <Arrows>
         <ArrowButton
+          data-test-id={'move-to-previous'}
           disabled={props.isPreviousDisabled}
           onClick={() => props.moveToPrevious(props.task.id)}
         >
@@ -26,6 +28,7 @@ export const Task: FunctionComponent<TaskProps> = (props) => {
         </ArrowButton>
 
         <ArrowButton
+          data-test-id={'move-to-next'}
           disabled={props.isNextDisabled}
           onClick={() => props.moveToNext(props.task.id)}
         >
@@ -35,7 +38,10 @@ export const Task: FunctionComponent<TaskProps> = (props) => {
 
       <Content>{props.task.content}</Content>
 
-      <BaseButton onClick={() => props.deleteTask(props.task.id)}>
+      <BaseButton
+        data-test-id={'delete-task-button'}
+        onClick={() => props.deleteTask(props.task.id)}
+      >
         <DeleteIcon />
       </BaseButton>
     </Wrapper>

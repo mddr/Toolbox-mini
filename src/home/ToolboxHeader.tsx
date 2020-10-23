@@ -15,13 +15,20 @@ export function ToolboxHeader({ theme, setTheme }: ToolboxHeaderProps) {
 
   return (
     <Header>
-      <Icon onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <Icon
+        data-test-id={'theme-switch'}
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      >
         {theme === 'dark' ? SetLightThemeIcon : SetDarkThemeIcon}
       </Icon>
 
       <div>
-        <PathName>{pathname.replace('/', '')}</PathName>
-        <StyledLink to="/">toolbox</StyledLink>
+        <PathName data-test-id={'path-name'}>
+          {pathname.replace('/', '')}
+        </PathName>
+        <StyledLink data-test-id={'home-link'} to="/">
+          toolbox
+        </StyledLink>
       </div>
     </Header>
   );

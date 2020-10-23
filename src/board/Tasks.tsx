@@ -28,8 +28,13 @@ export const Tasks: FunctionComponent<TasksProps> = (props) => {
     }
   };
 
+  const testId = `task-container-${props.label
+    .toLowerCase()
+    .split(' ')
+    .join('-')}`;
+
   return (
-    <Wrapper>
+    <Wrapper data-test-id={testId}>
       <Header>{props.label}</Header>
 
       <TasksWrapper>
@@ -51,6 +56,7 @@ export const Tasks: FunctionComponent<TasksProps> = (props) => {
           ''
         ) : (
           <Input
+            data-test-id={'add-new-task'}
             type="text"
             placeholder={'Add new note...'}
             value={content}

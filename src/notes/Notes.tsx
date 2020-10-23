@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { notesMock } from './notes.mock';
-import { Note } from './Note';
-import { ViewWrapper } from '../shared/styled';
-import { NewNote } from './NewNote';
 import { NoteType } from './notes.model';
+import { ViewWrapper } from '../shared/styled';
+import { Note } from './Note';
+import { NewNote } from './NewNote';
 
 export function Notes() {
   const [notes, setNotes] = useState<NoteType[]>(notesMock);
@@ -30,13 +30,20 @@ export function Notes() {
       </WithPadding>
 
       <WithPadding>
-        {notes.map((note) => {
-          return (
-            <WithPadding key={note.id}>
-              <Note note={note} deleteNote={deleteNote} />
-            </WithPadding>
-          );
-        })}
+        {notes?.length ? (
+          notes.map((note) => {
+            return (
+              <WithPadding key={note.id}>
+                <Note note={note} deleteNote={deleteNote} />
+              </WithPadding>
+            );
+          })
+        ) : (
+          <EmptyMsg data-test-id={'empty-message'}>
+            {' '}
+            No notes available!
+          </EmptyMsg>
+        )}
       </WithPadding>
     </ViewWrapper>
   );
@@ -44,4 +51,8 @@ export function Notes() {
 
 const WithPadding = styled.div`
   padding-bottom: 3rem;
+`;
+
+const EmptyMsg = styled.p`
+  text-align: center;
 `;
